@@ -8,7 +8,7 @@ namespace WebShop.DAL.DataAccsess
     {
         public DataAccsess(DbContextOptions<DataAccsess> options) : base(options) { Database.EnsureCreated(); }
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Discription> Discriptions { get; set; }
+        public DbSet<Description> Discriptions { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<CompletedOrder> completedOrders { get; set; }
         public DbSet<CompletedOrderDetail> CompletedOrderDetails { get; set; }

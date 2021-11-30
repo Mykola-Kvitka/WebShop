@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebShop.DAL.Models
@@ -6,7 +7,7 @@ namespace WebShop.DAL.Models
     public class Category
     {
         [Key]
-        public int NameId { get; set; }
+        public Guid NameId { get; set; } = Guid.NewGuid();
         [MaxLength(50)]
         public string Name { get; set; }
         [Required]
