@@ -4,4 +4,16 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Mapping\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebShop.BL\WebShop.BL.csproj" />
+    <ProjectReference Include="..\WebShop.DAL\WebShop.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

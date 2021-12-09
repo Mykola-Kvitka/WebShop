@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WebShop.DAL.Models
+namespace WebShop.BL.Models
 {
     public class CompletedOrderDetail
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         public int CompleteOrderId { get; set; }
         public int ProductId { get; set; }
         public int Kilkist { get; set; }

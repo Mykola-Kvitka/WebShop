@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebShop.DAL.Models
 {
-    public class Description
+    public class DescriptionEntity
     {
         [Key]
-        public int DescId { get; set; }
+        public Guid DescId { get; set; } = Guid.NewGuid();
         [Required]
         [MaxLength(2000)]
         public string LongDiscription { get; set; }

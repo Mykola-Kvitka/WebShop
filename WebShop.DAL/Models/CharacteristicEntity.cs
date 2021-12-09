@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebShop.DAL.Models
 {
-    public class Characteristic
+    public class CharacteristicEntity
     {
-        public int id { get; set; }
+        public Guid id { get; set; } = Guid.NewGuid();
         public int ProdId { get; set; }
         [Required]
         [MaxLength(64)]

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace WebShop.DAL.Models
+namespace WebShop.BL.Models
 {
     public class CompletedOrder
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         public int CompleteOrderId { get; set; }
         [MaxLength(64)]
         public string FirstName { get; set; }

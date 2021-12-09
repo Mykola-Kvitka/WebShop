@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace WebShop.DAL.Models
+namespace WebShop.BL.Models
 {
-    public class Orders
+    public class Order
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         [MaxLength(50)]
         public string FirstName { get; set; }
         [MaxLength(50)]

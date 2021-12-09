@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WebShop.DAL.Models
 {
-    public class Review
+    public class ReviewEntity
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid();
         [MaxLength(100)]
         public string ReviewerName { get; set; }
         [MaxLength(20)]
